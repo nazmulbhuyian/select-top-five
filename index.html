@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Selection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center p-48 bg-slate-800 mb-15">
+        <h1 class="text-7xl text-orange-600 font-bold">Select Top 5 Best Player</h1>
+        <p class="mt-10 font-semibold text-white">A football player or footballer is a sportsperson who plays one of the different types of football. <br> The main types of football are association football, American football, Canadian football, Australian rules football, <br> Gaelic football, rugby league and rugby union.</p>
+    </header>
+    <main class="bg-zinc-900 mb-10"> 
+        <section class="w-9/12 pt-10 pb-10 mx-auto flex">
+
+            <section class="grid grid-cols-3 gap-4">
+                <div class="player">
+                    <div class="player-image">
+                        <img src="image/aguaro.jpg" alt="">
+                    </div>
+                    <div class="player-detail bg-black text-center space-y-3 p-5">
+                        <h1 id="aguaro" class="text-3xl text-white">Aguaro</h1>
+                        <h3 class="text-slate-500">24 Goals . 68 Assist</h3>
+                        <button id="btn-aguaro" class="bg-blue-800 text-white px-7 py-3 font-semibold w-52">Select</button>
+                    </div>
+                </div>
+        
+                <div class="player">
+                    <div class="player-image">
+                        <img src="image/neymar.jpg" alt="">
+                    </div>
+                    <div class="player-detail bg-black text-center space-y-3 p-5">
+                        <h1 class="text-3xl text-white">Neymar Jr</h1>
+                        <h3 class="text-slate-500">31 Goals . 87 Assist</h3>
+                        <button class="bg-blue-800 text-white px-7 py-3 font-semibold w-52">Select</button>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="player-image">
+                        <img src="image/ronaldo.webp" alt="">
+                    </div>
+                    <div class="player-detail bg-black text-center space-y-3 p-5">
+                        <h1 class="text-3xl text-white">Ronaldo</h1>
+                        <h3 class="text-slate-500">33 Goals . 110 Assist</h3>
+                        <button class="bg-blue-800 text-white px-7 py-3 font-semibold w-52">Select</button>
+                    </div>
+                </div>
+                
+                <div class="player">
+                    <div class="player-image">
+                        <img src="image/messi.jpg" alt="">
+                    </div>
+                    <div class="player-detail bg-black text-center space-y-3 p-5">
+                        <h1 class="text-3xl text-white">Lionel Messi</h1>
+                        <h3 class="text-slate-500">36 Goals . 120 Assist</h3>
+                        <button class="bg-blue-800 text-white px-7 py-3 font-semibold w-52">Select</button>
+                    </div>
+                </div>
+        
+                <div class="player">
+                    <div class="player-image">
+                        <img src="image/mbappe.jpeg" alt="">
+                    </div>
+                    <div class="player-detail bg-black text-center space-y-3 p-5">
+                        <h1 class="text-3xl text-white">Kylian Mbappé</h1>
+                        <h3 class="text-slate-500">28 Goals . 95 Assist</h3>
+                        <button class="bg-blue-800 text-white px-7 py-3 font-semibold w-52">Select</button>
+                    </div>
+                </div>
+        
+                <div class="player">
+                    <div class="player-image">
+                        <img src="image/ramos.jpg" alt="">
+                    </div>
+                    <div class="player-detail bg-black text-center space-y-3 p-5">
+                        <h1 class="text-3xl text-white">Sergio Ramos</h1>
+                        <h3 class="text-slate-500">14 Goals . 42 Assist</h3>
+                        <button class="bg-blue-800 text-white px-7 py-3 font-semibold w-52">Select</button>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <div class="bg-black p-10 ml-5 h-72 mb-10">
+                    <h1 class="text-4xl text-white text-center mb-3 font-semibold">Selected-V</h1>
+                    <ul id="player-list"  class="space-y-4">
+                        <li class="text-white">1.</li>
+                        <li class="text-white">2.</li>
+                        <li class="text-white">3.</li>
+                        <li class="text-white">4.</li>
+                        <li class="text-white">5.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-black p-10 ml-5 h-auto space-y-8">
+                    <h1 class="text-4xl text-white text-center">Budget</h1>
+                    <div class="flex">
+                        <label class="text-xl text-slate-400" for="per-player">Per Player:</label>
+                        <input class="bg-gray-500" type="text" id="per-player" name="fav_language">
+                    </div>
+                    <button class="bg-blue-600 text-white px-5 py-3 w-full">Calculate</button>
+                    <h1 class="text-xl text-white">Player Expenses: $<span>0000</span></h1>
+                    <div class="flex">
+                        <label class="text-2xl text-slate-400" for="manager">Manager:</label>
+                        <input class=" bg-gray-500" type="text" id="manager" name="fav_language">
+                    </div>
+                    <div class="flex">
+                        <label class="text-2xl text-slate-400" for="coach">Coach:</label>
+                        <input class=" bg-gray-500" type="text" id="coach" name="fav_language">
+                    </div>
+                    <h1 class="text-2xl text-slate-400">Total: $<span>0000</span></h1>
+                </div>
+            </section>
+
+
+        </section>
+
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
