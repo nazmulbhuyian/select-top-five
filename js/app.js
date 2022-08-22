@@ -5,13 +5,13 @@ function addToCart(element){
     const productObj = {productName: productName}
     cartArray.push(productObj);
     element.setAttribute("disabled", true);
-    element.style.backgroundColour  = 'gray';
+    
     
     if(cartArray.length < 6){
         display(productName);
     }
     else{
-        alert('plz')
+        alert('You cannot select more than Five');
     }
     
 }
@@ -37,19 +37,6 @@ function display(cartProduct){
 
 
 
+ 
 
-// document.getElementById('btn-delete').addEventListener('click', function(){
-//     const deleteButton = document.getElementById('btn-delete');
-//     if(deleteButton === 'click'){
-//         deleteButton.removeAttribute('disabled');     
-//     }
-//     else{
-//         deleteButton.setAttribute('disabled', true);
-//     }
-// })
 
-// const makebluebutton = document.getElementsByClassName('makeblue');
-// makebluebutton.onclick = makeblue;
-// function makeblue() {
-//     document.body.style.backgroundColor = 'black';
-// }
