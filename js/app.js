@@ -16,11 +16,11 @@ function addToCart(element){
     
 }
 
-function display(cartProduct){
+function display(allPlayer){
     const playerList = document.getElementById('player-list');
     playerList.innerHTML = '';
     
-    for(i = 0; i < cartProduct.length; i++){
+    for(i = 0; i < allPlayer.length; i++){
         
         const name = playerArray[i].playerName;
 
