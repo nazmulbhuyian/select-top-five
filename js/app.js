@@ -1,14 +1,14 @@
 
-const cartArray = [];
+const playerArray = [];
 function addToCart(element){
-    const productName = element.parentNode.children[0].innerText;
-    const productObj = {productName: productName}
-    cartArray.push(productObj);
+    const playerName = element.parentNode.children[0].innerText;
+    const playerObj = {playerName: playerName}
+    playerArray.push(playerObj);
     element.setAttribute("disabled", true);
     
     
-    if(cartArray.length < 6){
-        display(productName);
+    if(playerArray.length < 6){
+        display(playerName);
     }
     else{
         alert('You cannot select more than Five');
@@ -22,7 +22,7 @@ function display(cartProduct){
     
     for(i = 0; i < cartProduct.length; i++){
         
-        const name = cartArray[i].productName;
+        const name = playerArray[i].playerName;
 
         const li = document.createElement('li');
 
@@ -30,47 +30,64 @@ function display(cartProduct){
         <li class="text-white">${name} </li>
         `
         playerList.appendChild(li);
-
     }
     
 }
 
 
-const btnd = document.getElementById('btn-d');
+const aguaro = document.getElementById('btn-aguaro');
 
-btnd.addEventListener('click', function() {
-  btnd.style.backgroundColor = 'gray';
-  btnd.style.color = 'white';
+aguaro.addEventListener('click', function() {
+  aguaro.style.backgroundColor = 'gray';
+  aguaro.style.color = 'white';
 });
-const btni = document.getElementById('btn-i');
+const neymar = document.getElementById('btn-neymar');
 
-btni.addEventListener('click', function() {
-  btni.style.backgroundColor = 'gray';
-  btni.style.color = 'white';
+neymar.addEventListener('click', function() {
+  neymar.style.backgroundColor = 'gray';
+  neymar.style.color = 'white';
 });
-const btns = document.getElementById('btn-s');
+const ronaldo = document.getElementById('btn-ronaldo');
 
-btns.addEventListener('click', function() {
-  btns.style.backgroundColor = 'gray';
-  btns.style.color = 'white';
+ronaldo.addEventListener('click', function() {
+  ronaldo.style.backgroundColor = 'gray';
+  ronaldo.style.color = 'white';
 });
-const btna = document.getElementById('btn-a');
+const messi = document.getElementById('btn-messi');
 
-btna.addEventListener('click', function() {
-  btna.style.backgroundColor = 'gray';
-  btna.style.color = 'white';
+messi.addEventListener('click', function() {
+  messi.style.backgroundColor = 'gray';
+  messi.style.color = 'white';
 });
-const btnb = document.getElementById('btn-b');
+const mbappe = document.getElementById('btn-mbappe');
 
-btnb.addEventListener('click', function() {
-  btnb.style.backgroundColor = 'gray';
-  btnb.style.color = 'white';
+mbappe.addEventListener('click', function() {
+  mbappe.style.backgroundColor = 'gray';
+  mbappe.style.color = 'white';
 });
-const btnl = document.getElementById('btn-l');
+const ramos = document.getElementById('btn-ramos');
 
-btnl.addEventListener('click', function() {
-  btnl.style.backgroundColor = 'gray';
-  btnl.style.color = 'white';
+ramos.addEventListener('click', function() {
+  ramos.style.backgroundColor = 'gray';
+  ramos.style.color = 'white';
+});
+const dybala = document.getElementById('btn-dybala');
+
+dybala.addEventListener('click', function() {
+  dybala.style.backgroundColor = 'gray';
+  dybala.style.color = 'white';
+});
+const maradona = document.getElementById('btn-maradona');
+
+maradona.addEventListener('click', function() {
+  maradona.style.backgroundColor = 'gray';
+  maradona.style.color = 'white';
+});
+const pogba = document.getElementById('btn-pogba');
+
+pogba.addEventListener('click', function() {
+  pogba.style.backgroundColor = 'gray';
+  pogba.style.color = 'white';
 });
  
 
