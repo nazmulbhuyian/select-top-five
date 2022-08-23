@@ -12,6 +12,8 @@ function addToCart(element){
     }
     else{
         alert('You cannot select more than Five');
+        playerArray.pop();
+        return;
     }
     
 }
