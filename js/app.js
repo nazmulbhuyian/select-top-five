@@ -6,9 +6,9 @@ function addToCart(element){
     playerArray.push(playerObj);
     element.setAttribute("disabled", true);
     
-    
     if(playerArray.length < 6){
         display(playerName);
+        
     }
     else{
         alert('You cannot select more than Five');
@@ -22,7 +22,7 @@ function display(allPlayer){
     
     for(i = 0; i < allPlayer.length; i++){
         
-        const name = playerArray[i].playerName;
+      const name = playerArray[i].playerName;
 
         const li = document.createElement('li');
 
