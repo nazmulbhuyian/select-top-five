@@ -7,9 +7,19 @@ document.getElementById('calculate').addEventListener('click', function(){
     const totalExpencesString = totalExpencesId.innerText;
     const totalExpencesField = parseFloat(totalExpencesString);
 
-    const ToalPlayerCoast = perPlayer * 5;
+    const ToalPlayerCoast = perPlayer * cartArray.length;
     totalExpencesId.innerText = ToalPlayerCoast;
 
+
+
+})
+
+document.getElementById('calculate-total').addEventListener('click', function(){
+
+    const perPlayerHead = document.getElementById('player');
+    const perPlayerHeadString = perPlayerHead.value;
+    const perPlayer = parseFloat(perPlayerHeadString); 
+    const ToalPlayerCoast = perPlayer * cartArray.length;   
 
     const managerInputField = document.getElementById('manager');
     const managerInputFieldString = managerInputField.value;
